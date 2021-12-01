@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="TODO" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>TODO - SuperTux</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">TODO</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From SuperTux</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Table of contents</b> <script type="text/javascript">showTocToggle("show","hide")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#Milestone_2">1 Milestone 2</a><br /></div>
+<div class="tocline"><a href="#Notes">2 Notes</a><br /></div>
+<div class="tocline"><a href="#Programming">3 Programming</a><br /></div>
+<div class="tocindent">
+<p><a href="#Collision_detection_rewrite_.28H.29">3.1 Collision detection rewrite (H)</a><br />
+<a href="#Code_Refactoring.2FCleanup.2FOptimisation">3.2 Code Refactoring/Cleanup/Optimisation</a><br />
+<a href="#Actions">3.3 Actions</a><br />
+<a href="#Scripting.2FCutscenes">3.4 Scripting/Cutscenes</a><br />
+<a href="#Badguys">3.5 Badguys</a><br />
+<a href="#Objects">3.6 Objects</a><br />
+<a href="#Optimisations">3.7 Optimisations</a><br />
+<a href="#Miscellaneous">3.8 Miscellaneous</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#Levels">4 Levels</a><br /></div>
+<div class="tocline"><a href="#Graphics">5 Graphics</a><br /></div>
+<div class="tocline"><a href="#Beyond_Milestone2">6 Beyond Milestone2</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=1" title="TODO">edit</a>]</div><a name="Milestone_2"></a><h2> Milestone 2 </h2>
+<p>Documents and ideas: <a href="/wiki/index.php/Milestone_2" title="Milestone 2">Milestone 2</a> esp. <a href="/wiki/index.php/Forest" title="Forest">Forest world</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=2" title="TODO">edit</a>]</div><a name="Notes"></a><h2> Notes </h2>
+<p><b>High priority H:</b> milestone goals that should be implemented for next milestone
+</p><p><b>Medium priority M:</b> would be nice to have for next milestone, but should be secondary to high priority goals
+</p><p><b>Low priority L:</b> things that should be fixed sometime
+</p><p><b>?:</b> things that need to be discussed to determine whether or not they should be implemented
+</p><p><b>D:</b> features that will be implemented but need further discussion on how to implement them
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=3" title="TODO">edit</a>]</div><a name="Programming"></a><h2> Programming </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=4" title="TODO">edit</a>]</div><a name="Collision_detection_rewrite_.28H.29"></a><h3> Collision detection rewrite (H) </h3>
+<ul><li> implement ability to carry Mr. Iceblock (and other objects) around
+</li><li> smoke clouds are too fast
+</li><li> rethink slopes collision feedback... tux becomes too slow when walking up and starts jumping when walking down
+</li><li> think about an attachement mechanism for moving platforms
+</li><li> implement paths for the moving platform, implement simple moving platforms
+</li><li> fix bullet speed/behaviour
+</li><li> check if unducking is actually possible or if something is in the way
+</li><li> what to do when stuck under tiles (after using duck-sliding)
+</li><li> <b>?:</b> do we want multi hit scores again?
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=5" title="TODO">edit</a>]</div><a name="Code_Refactoring.2FCleanup.2FOptimisation"></a><h3> Code Refactoring/Cleanup/Optimisation </h3>
+<ul><li> <b>M</b> (or <b>H</b>?)<b>:</b> implement quadtree or grid to speedup collision detection
+</li><li> <b>M:</b> use refcounting for GameObjects and implement a remove_listener function, so that you can keep track when GameObject get added/removed to the Sector. (refcounting is needed here, otherwise we'll get into trouble when 1 of the listener objects dies before it gets notificated). Unregistering in the destructor would be an alternative solution but an error prone one.
+</li><li> <b>L:</b> harmonize to 1 single gameloop that switches between title, worldmap, ingame mode and eventually leveleditor mode
+</li><li> <b>L:</b> change physics class y-velocity-coordinate to be like all other y-coordinates again (positive y to go down)
+</li><li> <b>L:</b> name files according to the classes they contain, e.g. tile_manager.* to TileManager.* because it contains a class named TileManager and not tile_manager
+</li><li> <b>L:</b> Refactor worldmap code to run like a normal GameSession with some special GameObjects
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=6" title="TODO">edit</a>]</div><a name="Actions"></a><h3> Actions </h3>
+<ul><li> <b>H:</b> Buttjump:
+<ul><li> re-enable buttjump
+</li><li> should kill enemies with a certain range (<i>needs to be tweaked</i>)
+<ul><li> eventually, enemies in a given radius should only be stunned
+</li></ul>
+</li><li> animation (need images)
+</li><li> should only be available when tux is big
+</li><li> should break bricks if Tux is on top of bricks.
+</li></ul>
+</li><li> <b>H:</b> Flapping:
+<ul><li> should be modeled after Yoshi's Island flapping
+</li><li> <b>?:</b> check if this doesn't heavily affect gameplay
+</li><li> animation (need images)
+</li></ul>
+</li><li> <b>H:</b> Blowflyer:
+<ul><li> should be temporarily active for a single sector or time-limited (i.e. countdown)
+</li><li> <b>D:</b> we don't know yet how Tux could gain that ability; probably some non-movable objects in the level (helium bottles were rejected, should be something more "abstract")
+</li></ul>
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=7" title="TODO">edit</a>]</div><a name="Scripting.2FCutscenes"></a><h3> Scripting/Cutscenes </h3>
+<ul><li> <b>H:</b> add a global variable store for scripts or something like that holds information across levels/scripts and save/load cycles.
+</li><li> <b>H:</b> implement a lighting effect for nolok
+</li><li> <b>H:</b> create a script for the intro cutscene
+</li><li> <b>H:</b> make it possible to modify the worldmap after the yeti has been defeated
+</li><li> <b>H:</b> extract translatable string from the scripts
+</li><li> <b>H:</b> write a bit of documentation about the scripting API (at least a sentence or two about each function)
+</li><li> <b>M:</b> create a script for the yeti outro
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=8" title="TODO">edit</a>]</div><a name="Badguys"></a><h3> Badguys </h3>
+<ul><li> <b>H:</b> bring back stay on platform flag
+</li><li> <b>H:</b> reimplement fish
+</li><li> <b>H:</b> badguy squish code isn't perfect at the moment... you sometimes get hit althought you should have squished the badguy.
+</li><li> <b>M:</b> do something with the wingling
+</li><li> <b>L:</b> iceblock should slide over one-space holes
+</li><li> <b>?:</b> do something with the tree?
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=9" title="TODO">edit</a>]</div><a name="Objects"></a><h3> Objects </h3>
+<ul><li> <b>M:</b> add a simple rock object that can be carried around (<i>done, has to be tweaked</i>)
+</li><li> <b>M:</b> add a rope object on which tux is able to climb, also add a&nbsp;? block that emits a rope when hit
+</li><li> <b>M:</b> redo trampolines
+</li><li> <b>L:</b> add a "geysir" object: It's a fountain of water that raises in certain intervals. It can be used as jump-pad as the water gives tux and up-boost when standing on it.
+</li><li> <b>?:</b> Give tiles a configurable friction factor and make tux react to it. (for Icy tiles)
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=10" title="TODO">edit</a>]</div><a name="Optimisations"></a><h3> Optimisations </h3>
+<ul><li> <b>H:</b> Split more sprite decriptions into separate .sprite files so that they get lazily loaded.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=11" title="TODO">edit</a>]</div><a name="Miscellaneous"></a><h3> Miscellaneous </h3>
+<ul><li> <b>H:</b> Add more try/catch blocks in the source so that the game handles simple errors more smoothly. (This is very visible when loading config files or savegames failed)
+</li><li> <b>M:</b> Make sure levels for version 0.1.2 still work. Currently this isn't the case because some files have been renamed and other small stuff... Our levelmaking fans will be happy if they don't loose the ability to play their old levels.
+<ul><li> For the final release, we should also include a conversion algorithm that upgrades the levels to the new format.
+</li></ul>
+</li><li> <b>M:</b> save score on per-level basis to make high-score (this means coins/time)
+</li><li> <b>M:</b> Invicibility music should stop a little sooner than the invincibility itself, and make flashing of stars at the end more clear.
+</li><li> <b>L:</b> the camera does some nasty little jumps if you jumped up on a higher place where the camera didn't completely follow yet and you fall down directly again. This will suddenly raise the camera up.
+</li><li> <b>L:</b> Add an option to tilemaps to fade away if tux stands behind tiles. (This is usefull to hide secret ways and entrances)
+</li><li> <b>D:</b> think about icebullet specifics
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=12" title="TODO">edit</a>]</div><a name="Levels"></a><h2> Levels </h2>
+<ul><li> <b>H:</b> create 10 or more new levels of different size and complexity, using the new features of milestone 2.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=13" title="TODO">edit</a>]</div><a name="Graphics"></a><h2> Graphics </h2>
+<ul><li> <b>H:</b> add more forest tiles; some of the current ones need fixing. Also create a ghost forest tileset.
+</li><li> <b>H:</b> animations for the <a href="/wiki/index.php/Yeti" title="Yeti">Yeti</a>
+</li><li> <b>H:</b> image for castle door with 5 key holes
+</li><li> <b>H:</b> new tiles for the forest worldmap
+</li><li> <b>M:</b> up and down arrows for infoboxes to signify the possibility to scroll up/down
+</li><li> <b>L:</b> graphics for ropes
+</li><li> <b>L:</b> graphics for bubbles and soap (not necessary for Milestone 2)
+</li><li> <b>?/D:</b> new enemies (first need to be designed)
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=14" title="TODO">edit</a>]</div><a name="Beyond_Milestone2"></a><h2> Beyond Milestone2 </h2>
+<ul><li> more things than just levels on the worldmap (similar to SMB3)
+</li></ul>
+
+<!-- Saved in parser cache with key supertux:pcache:idhash:935-1!1!0!1!0!1!0!!en and timestamp 20051202230819 -->
+<div class="printfooter">
+Retrieved from "<a href="http://supertux.berlios.de/wiki/index.php/TODO">http://supertux.berlios.de/wiki/index.php/TODO</a>"</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/TODO">Article</a></li><li id="ca-talk"
+	       	       ><a href="/wiki/index.php/Talk:TODO">Discussion</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=TODO&amp;action=edit">Edit</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=TODO&amp;action=history">History</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Personal tools</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=Special:Userlogin&amp;returnto=TODO">Create an account or log in</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/logo.png);"
+	    href="/wiki/index.php/Main_Page"
+	    title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Navigation</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/Main_Page">Main Page</a></li>	      <li id="n-homepage"><a href="http://supertux.berlios.de/">Homepage</a></li>	      <li id="n-projectpage"><a href="http://developer.berlios.de/projects/supertux/">Project page</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/Special:Recentchanges">Recent changes</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/Special:Randompage">Random page</a></li>	      <li id="n-help"><a href="/wiki/index.php/Help:Contents">Help</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Search</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/Special:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="f" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Go"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Search" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Toolbox</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=Special:Whatlinkshere&amp;target=TODO">What links here</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=Special:Recentchangeslinked&amp;target=TODO">Related changes</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/Special:Specialpages">Special pages</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://developer.berlios.de/" title="BerliOS Developer"> <img src="http://developer.berlios.de/bslogo.php?group_id=3467" width="124px" height="32px" border="0" alt="BerliOS Developer Logo"></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 12:10, 26 Oct 2005.</li>	  <li id="f-viewcount">This page has been accessed 3160 times.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/SuperTux:About" title="SuperTux:About">About SuperTux</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/SuperTux:General_disclaimer" title="SuperTux:General disclaimer">Disclaimers</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by unicorn in 2.02 secs. -->  </body>
+</html>

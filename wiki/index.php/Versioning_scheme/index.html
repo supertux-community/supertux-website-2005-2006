@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Versioning scheme" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Versioning scheme - SuperTux</title>
+    <style type="text/css" media="screen">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Versioning scheme</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From SuperTux</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p>This page describes the new versioning scheme that will be used for SuperTux.
+</p>
+<table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Table of contents</b> <script type="text/javascript">showTocToggle("show","hide")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#The_new_scheme">1 The new scheme</a><br /></div>
+<div class="tocindent">
+<p><a href="#SuperTux">1.1 SuperTux</a><br />
+<a href="#SuperTux_Editor">1.2 SuperTux Editor</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#Release_branches">2 Release branches</a><br /></div>
+<div class="tocindent">
+<p><a href="#0.1.x_releases">2.1 0.1.x releases</a><br />
+<a href="#0.2.x_releases">2.2 0.2.x releases</a><br />
+<a href="#0.3.x_releases">2.3 0.3.x releases</a><br />
+<a href="#0.4.x_releases">2.4 0.4.x releases</a><br />
+</p>
+</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=1" title="Versioning scheme">edit</a>]</div><a name="The_new_scheme"></a><h2>The new scheme</h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=2" title="Versioning scheme">edit</a>]</div><a name="SuperTux"></a><h3>SuperTux</h3>
+<p>Releases will have the form of <tt >x.y.z</tt >.
+</p>
+<ul><li> <tt >x</tt > is increased only when there is a <i>major</i> update. When <tt >x</tt > is increased, <tt >y</tt > and <tt >z</tt > are reset to <tt >0</tt >
+</li><li> <tt >y</tt > is increased for each new regular, planned released. When <tt >y</tt > is increased, <tt >z</tt > is reset to <tt >0</tt >. Odd versions of <tt >y</tt > indicate a <i>development branch</i>. Even versions of <tt >y</tt > indicate a <i>stable branch</i>.
+</li><li> <tt >z</tt > is increased when there is a bugfix release or minor changes are made, such as a couple new features and new content (eg, new worlds or levels). For development branches, bigger changes are more likely to make it into <tt >z</tt >-releases.
+</li></ul>
+<p>The development branches are used to work our way to a stable release. For example, the <tt >0.3.x</tt > will be used to create a stable <tt >0.4.0</tt > (<a href="/wiki/index.php/Milestone_2" title="Milestone 2">Milestone 2</a>) release.
+</p><p>While development releases are likely to be stable, they are more liklely to receive less testing before a release, so we cannot guarantee their stability.
+</p><p>As a rule, <tt >z</tt >-releases cannot break level editor functionality in stable branches. For development branches you should check the wiki to make sure your version of the SuperTux Editor works with your version of SuperTux. To be sure, if you are using the development branch you should always be using the latest version of both SuperTux and the SuperTux Editor.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=3" title="Versioning scheme">edit</a>]</div><a name="SuperTux_Editor"></a><h3>SuperTux Editor</h3>
+<p>Releases will have the form of <tt >x.y.z</tt >.
+</p>
+<ul><li> <tt >x</tt > and <tt >y</tt > will match the <tt >x</tt > and <tt >y</tt > of the SuperTux release the editor works for.
+</li><li> <tt >z</tt > is increased when there is a bugfix release or minor changes made to the editor. This number does not necessarily match up with the <tt >z</tt > of the SuperTux release.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=4" title="Versioning scheme">edit</a>]</div><a name="Release_branches"></a><h2>Release branches</h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=5" title="Versioning scheme">edit</a>]</div><a name="0.1.x_releases"></a><h3><tt >0.1.x</tt > releases</h3>
+<p>This is the <a href="/wiki/index.php/Milestone_1" title="Milestone 1">Milestone 1</a> branch.
+</p><p>The <tt >0.1.x</tt > releases do not follow the current versioning scheme. <tt >0.1.x</tt > is considered a <i>stable  branch</i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=6" title="Versioning scheme">edit</a>]</div><a name="0.2.x_releases"></a><h3><tt >0.2.x</tt > releases</h3>
+<p>There will not be any <tt >0.2.x</tt > releases.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=7" title="Versioning scheme">edit</a>]</div><a name="0.3.x_releases"></a><h3><tt >0.3.x</tt > releases</h3>
+<p>The <tt >0.3.x</tt > branch will be used to develop SuperTux 0.4.0. Its current aim is to implement the <a href="/wiki/index.php/Milestone_1.9" title="Milestone 1.9">Milestone 1.9</a> goals.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit&amp;section=8" title="Versioning scheme">edit</a>]</div><a name="0.4.x_releases"></a><h3><tt >0.4.x</tt > releases</h3>
+<p>SuperTux 0.4.0 will be the <a href="/wiki/index.php/Milestone_2" title="Milestone 2">Milestone 2</a> release.
+</p>
+<!-- Saved in parser cache with key supertux:pcache:idhash:1526-1!1!0!1!0!1!0!!en and timestamp 20070104103900 -->
+<div class="printfooter">
+Retrieved from "<a href="http://supertux.berlios.de/wiki/index.php/Versioning_scheme">http://supertux.berlios.de/wiki/index.php/Versioning_scheme</a>"</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/Versioning_scheme">Article</a></li><li id="ca-talk"
+	       	       ><a href="/wiki/index.php/Talk:Versioning_scheme">Discussion</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=Versioning_scheme&amp;action=edit">Edit</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=Versioning_scheme&amp;action=history">History</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Personal tools</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=Special:Userlogin&amp;returnto=Versioning_scheme">Create an account or log in</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/logo.png);"
+	    href="/wiki/index.php/Main_Page"
+	    title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Navigation</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/Main_Page">Main Page</a></li>	      <li id="n-homepage"><a href="http://supertux.berlios.de/">Homepage</a></li>	      <li id="n-projectpage"><a href="http://developer.berlios.de/projects/supertux/">Project page</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/Special:Recentchanges">Recent changes</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/Special:Randompage">Random page</a></li>	      <li id="n-help"><a href="/wiki/index.php/Help:Contents">Help</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Search</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/Special:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="f" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Go"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Search" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Toolbox</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=Special:Whatlinkshere&amp;target=Versioning_scheme">What links here</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=Special:Recentchangeslinked&amp;target=Versioning_scheme">Related changes</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/Special:Specialpages">Special pages</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://developer.berlios.de/" title="BerliOS Developer"> <img src="http://developer.berlios.de/bslogo.php?group_id=3467" width="124px" height="32px" border="0" alt="" /></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 20:23, 25 Sep 2006.</li>	  <li id="f-viewcount">This page has been accessed 360 times.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/SuperTux:About" title="SuperTux:About">About SuperTux</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/SuperTux:General_disclaimer" title="SuperTux:General disclaimer">Disclaimers</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by unicorn in 0.51 secs. -->
+  </body>
+</html>

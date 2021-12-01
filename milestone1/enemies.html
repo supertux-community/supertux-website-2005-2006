@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SuperTux</title>
+<link rel="stylesheet" type="text/css" href="../default.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+<div style="text-align: center;"><img src="../images/logo.png" alt="Logo of SuperTux"></div>
+<div class="menu"><table align="center"><tr>
+  <td><a href="../welcome.html">SuperTux</a></td>
+  <td><a class="active">Milestone1</a></td>
+  <td><a href="../milestone2/index.html">Milestone2</a></td>
+  <td><a href="../development/index.html">Development</a></td>
+  <td><a href="../wiki/index.php">Wiki</a></td>
+  <td><a href="http://developer.berlios.de/projects/supertux/">Berlios.de</a></td>
+</tr></table></div>
+<div class="submenu"><table align="center" cellspacing="0" cellpadding="0"><tr>
+  <td><a href="index.html">Introduction</a></td>
+  <td><a href="gameplay.html">Gameplay</a></td>
+  <td><a href="levels.html">Levels</a></td>
+  <td><a href="tilesets.html">Tilesets</a></td>
+  <td><a class="active">Enemies</a></td>
+  <td><a href="misc.html">Misc</a></td>
+</tr></table></div>
+<div class="mainbody">
+
+  <div class="section-box">
+<div class="section-title"><h2>Current State</h2></div>
+<div class="section-body">
+    <p>
+      The Computer/Geek theme (laptop enemies, bsods) which is visible
+      in the current CVS version will be dropped and be replaced with
+      something more comical.
+    </p>
+  </div>
+</div>
+
+  <div class="section-box" id="enemies">
+<div class="section-title"><h2>Enemies</h2></div>
+<div class="section-body">
+    <h3>Evil Penguin</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/evil_penguin.png" alt=""></td>
+<td valign="top">
+        The Evil Penguin should look similar to Tux, it will probally
+        have another color and another shaped bill. Ranges of attack
+        might be something simple such as spitting balls or eggs at
+        Tux. There might even be multiple levels of evil penguins with
+        different behaviours (fire, ice).
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Mr. Bomb</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/mrbomb2.png" alt=""></td>
+<td valign="top">
+        Pretty much every game has some kind of exploding enemy, so
+        SuperTux should have something like that too. For the moment
+        this should be our Mr. Bomb, a plain and simple Bomb running
+        on its tiny feed.
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Mr. IceBlock</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/mriceblock2.png" alt=""></td>
+<td valign="top">
+        Mr. IceBlock could be the most basic enemy in SuperTux, he
+        just walks around without having any 'special attacks' or
+        something like that. Jumping on Mr. IceBlock should flatten
+        him and thus kill him.
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Mr. Snowball</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/mrsnowball.png" alt=""></td>
+<td valign="top">
+        Little Mr. Snowball is a basic enemey which might start to
+        roll if kicked with a Iceblock or on other issues.
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Bouncing Snowball</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/rollsnow.gif" alt=""></td>
+<td valign="top">
+        A bouncing/rolling ball that bounces around on the playfield
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Flying Snowball</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/flyingsnow.png" alt=""></td>
+<td valign="top">
+        Flies vertically up and down a bit
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Mr. Crystal</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/mrcrystal.png" alt=""></td>
+<td valign="top">
+        When Tux jumps on MrCrystal, MrCrystal will break into pieces.
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Spiky</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/spiky3.png" alt=""></td>
+<td valign="top">
+        Spiky has spikes which makes it impossible for Tux to kill him
+        by jumping on him.
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Jumpy Spiky</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/jumpy2.png" alt=""></td>
+<td valign="top">
+        Moneybag replacement, jumps up and down and is not killable by jumping
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Fish</h3>
+      <table border="0"><tr>
+<td valign="top"><img src="images/fish.png" alt=""></td>
+<td valign="top">
+        Jumps up and down
+      </td>
+</tr></table>
+    <br style="clear: both;">
+
+    <h3>Unsorted</h3>
+      <a href="images/enemies.jpg"><img class="screenshot" alt="images/enemies" src="images/enemies_small.jpg" title=""></a>
+    <br style="clear: both;">
+
+    <h3>Sprites</h3>
+      <p>
+        The following is a list of basic sprites that are needed, more
+        can never be bad, but it should especially made sure that the
+        few here are good and smooth. The width/height are only meant
+        as guideline, a bit larger/smaller is ok and recomment, since
+        overlap of graphics can produce a more cleaner look in the
+        final game. Some of the other pages here contain sketches of
+        the sprites.
+      </p>
+
+      <ul>
+        <li>SmallTux - 32x32, ie. Tux without extras</li>
+        <li>Tux - 64x32, ie. Tux with 'size' extra</li> 
+        <li>SuperTux - 64x32, ie Tux with 'size' and 'firepower' extra</li>
+
+        <li>Mr. Iceblock - 32x32 most basic enemy, needs two or three
+          frames for a walking, at least one for dieing</li>
+        
+        <li>Mr. Bomb - 32x32 a basic enemy that explodes after being
+          kill, needs two or three for walking, at least two for being
+          dead plus at least one for explosion</li>
+
+      </ul>
+    <br style="clear: both;">
+
+  </div>
+</div>
+</div>
+<div class="copyright">
+<img style="float:right; vertical-align:middle; border: 0; width: 124px; height: 32px;" alt="BerliOS Developer Logo" src="http://developer.berlios.de/bslogo.php?group_id=3467">
+          Contact via IRC: irc.freenode.net, #supertux<br>
+
+          Contact via <a href="http://developer.berlios.de/mail/?group_id=3467">Mailing
+            List</a>: <a href="mailto:supertux-devel@lists.berlios.de">supertux-devel@lists.berlios.de</a><br>
+
+          Last update: 2006-07-06<br>
+</div>
+</body>
+</html>

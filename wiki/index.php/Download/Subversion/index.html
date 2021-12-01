@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Download/Subversion" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Download/Subversion - SuperTux</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Download/Subversion</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From SuperTux</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Table of contents</b> <script type="text/javascript">showTocToggle("show","hide")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#Getting_the_repository">1 Getting the repository</a><br /></div>
+<div class="tocline"><a href="#What_is_Subversion.3F">2 What is Subversion?</a><br /></div>
+<div class="tocline"><a href="#Main_locations_in_the_repository">3 Main locations in the repository</a><br /></div>
+<div class="tocline"><a href="#See_also">4 See also</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Download/Subversion&amp;action=edit&amp;section=1" title="Download/Subversion">edit</a>]</div><a name="Getting_the_repository"></a><h2> Getting the repository </h2>
+<p>If you already have Subversion installed, you will have to issue these commands to get to the SuperTux repository. Anonymous access is not granted to a special repository that only gets updated once a few hours (as with Sourceforge), but instead to the main repository, so any commited changes can be directly updated by developers and non-developers.
+</p>
+<pre>cd <i>directory_for_source_files</i>
+svn checkout svn://svn.berlios.de/supertux/trunk/supertux supertux
+</pre>
+<p>Once the checkout process is completed, you have SuperTux in your <i>directory_for_source_files</i>/supertux directory, e.g. <i>~/src/supertux</i>.
+</p><p>If you want to get the newest updates to the repository, move to the directory where you checked out SuperTux (e.g. <i>~/src/supertux</i>) and call <code >svn update</code >.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Download/Subversion&amp;action=edit&amp;section=2" title="Download/Subversion">edit</a>]</div><a name="What_is_Subversion.3F"></a><h2> What is Subversion? </h2>
+<p><a href="http://subversion.tigris.org/" class='external' title="http://subversion.tigris.org/" rel="nofollow">Subversion</a><span class='urlexpansion'>&nbsp;(<i>http://subversion.tigris.org/</i>)</span> is a version control system that aims to be used as CVS, but removing the numerous design mistakes. It can access repositories via its own protocol (optionally bridged over SSH) plus HTTP and HTTPS using the WebDAV standard.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Download/Subversion&amp;action=edit&amp;section=3" title="Download/Subversion">edit</a>]</div><a name="Main_locations_in_the_repository"></a><h2> Main locations in the repository </h2>
+<table cellpadding="3">
+<tr ><th >Branch/Subproject</th ><th >Path</th ></tr >
+<tr ><td >SuperTux development version</td ><td ><tt >svn://svn.berlios.de/supertux/trunk/supertux</tt ></td ></tr >
+<tr ><td >SuperTux Milestone 1</td ><td ><tt >svn://svn.berlios.de/supertux/branches/milestone1</tt ></td ></tr >
+<tr ><td ><a href="/wiki/index.php/SuperTux_Portable" title="SuperTux Portable">SuperTux Portable</a></td ><td ><tt >svn://svn.berlios.de/supertux/trunk/supertux-portable</tt ></td ></tr >
+</table >
+<hr />
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Download/Subversion&amp;action=edit&amp;section=4" title="Download/Subversion">edit</a>]</div><a name="See_also"></a><h2> See also </h2>
+<ul><li><a href="/wiki/index.php/Mailing_Lists" title="Mailing Lists">Mailing Lists</a> for the information on SuperTux mailing lists.
+</li><li><a href="/wiki/index.php/TODO" title="TODO">TODO</a> for the list of features that have yet to be built in.
+</li><li><a href="http://svn.berlios.de/viewcvs/supertux/trunk/supertux/" class='external' title="http://svn.berlios.de/viewcvs/supertux/trunk/supertux/" rel="nofollow">Repository HTTP Interface</a><span class='urlexpansion'>&nbsp;(<i>http://svn.berlios.de/viewcvs/supertux/trunk/supertux/</i>)</span> to browse the repository using your web browser.
+</li></ul>
+
+<!-- Saved in parser cache with key supertux:pcache:idhash:1114-1!1!0!1!0!1!0!!en and timestamp 20051226205047 -->
+<div class="printfooter">
+Retrieved from "<a href="http://supertux.berlios.de/wiki/index.php/Download/Subversion">http://supertux.berlios.de/wiki/index.php/Download/Subversion</a>"</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/Download/Subversion">Article</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=Talk:Download/Subversion&amp;action=edit">Discussion</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=Download/Subversion&amp;action=edit">Edit</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=Download/Subversion&amp;action=history">History</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Personal tools</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=Special:Userlogin&amp;returnto=Download/Subversion">Create an account or log in</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/logo.png);"
+	    href="/wiki/index.php/Main_Page"
+	    title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Navigation</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/Main_Page">Main Page</a></li>	      <li id="n-homepage"><a href="http://supertux.berlios.de/">Homepage</a></li>	      <li id="n-projectpage"><a href="http://developer.berlios.de/projects/supertux/">Project page</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/Special:Recentchanges">Recent changes</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/Special:Randompage">Random page</a></li>	      <li id="n-help"><a href="/wiki/index.php/Help:Contents">Help</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Search</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/Special:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="f" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Go"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Search" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Toolbox</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=Special:Whatlinkshere&amp;target=Download%2FSubversion">What links here</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=Special:Recentchangeslinked&amp;target=Download%2FSubversion">Related changes</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/Special:Specialpages">Special pages</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://developer.berlios.de/" title="BerliOS Developer"> <img src="http://developer.berlios.de/bslogo.php?group_id=3467" width="124px" height="32px" border="0" alt="BerliOS Developer Logo"></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 08:03, 23 Oct 2005.</li>	  <li id="f-viewcount">This page has been accessed 1761 times.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/SuperTux:About" title="SuperTux:About">About SuperTux</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/SuperTux:General_disclaimer" title="SuperTux:General disclaimer">Disclaimers</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by unicorn in 1.02 secs. -->  </body>
+</html>

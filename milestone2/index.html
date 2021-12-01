@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SuperTux</title>
+<link rel="stylesheet" type="text/css" href="../default.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+<center><img src="../images/logo.png"></center>
+<div class="menu"><table align="center"><tr>
+  <td><a href="../welcome.html">SuperTux</a></td>
+  <td><a href="../milestone1/index.html">Milestone1</a></td>
+  <td><a class="active" href="milestone2/index.html">Milestone2</a></td>
+  <td><a href="../development/index.html">Development</a></td>
+  <td><a href="../wiki/index.php">Wiki</a></td>
+  <td><a href="http://developer.berlios.de/projects/supertux/">Berlios.de</a></td>
+</tr></table></div>
+<div class="submenu"><table align="center" cellspacing="0" cellpadding="0"><tr>
+  <td><a href="index.html">Introduction</a></td>
+</tr></table></div>
+<div class="mainbody">
+  <div class="section-box">
+<div class="section-title"><h2>Milestone 2 Goals</h2></div>
+<div class="section-body">
+    <p>
+      Now that Milestone1 is out and up and running, its time to take
+      some preperations for Milestone2. Goals should of course
+      include:
+    </p>
+
+    <ul>
+      <li>new enemies</li>
+      <li>at least one new tileset</li>
+      <li>15-30 new levels</li>
+    </ul>
+
+    <p>
+      However that are of course just generic goals that pretty much
+      apply to any Milestone, more detail goals follow below and will
+      be extented and refined over the comming month:
+    </p>
+
+    <ul>
+      <li>intelligent horizontal and vertical scrolling as seen in
+        most later jump'n runs, which means tha camera should
+        automatically change the viewpoint so that the player has a
+        good view onto things that are comming onto him, it should
+        also be possible for the player to manually turn the camera to
+        move to the left/right, the camera should also be sensitive to
+        the speed of the player, so if he runs fast the camera should
+        give more to see infront of the player, then when walking
+        at normal speed, Yoshi Island demonstrates this camera behaviour quite well
+      </li>
+
+      <li>
+        together with vertical scrolling levels of course should have
+        both variable heights and width
+      </li>
+      
+      <li>
+        parallax scrolling backgrounds should be build out of tiles
+        instead of plain huge jpg/png graphics, multilpe configurable
+        background layers would be good as well (ie. gradient,
+        parallax tilemap 1, parallax tilemap 2, playfield bg,
+        interactive playfield, playfield fg, parallax tilemap
+        foreground)
+      </li>
+
+      <li>
+        the game should support sublevels, so that one can walk
+        through pipes or doors to enter other sections of a level
+      </li>
+
+      <li>
+        butt-jump as described on the development page should be
+        implemented, in addition to that there would be a need for a
+        new tiletype that reacts on a butt-jump and gets smashed
+      </li>
+
+      <li>
+        flaping as described on the described should be implemented,
+        it should basically provide the player with an additional 'up
+        boost' in the down-phase of a jump and giving him more ability
+        to land precisly.
+      </li>
+
+      <li>
+        one-tile problem should be fixed, meaning Tux should be able
+        to fall through small 1 tile wide holes, instead of just
+        walking over them, this could/should be fixed by the use
+        collision/tile shapes that are not rects, but rects with round
+        edges or elipses
+      </li>
+
+      <li>
+        Tux should be able to jump again/bounce while jumping on an
+        enemy (ie. by holding down the jump button), this is standard
+        Mario behaviour
+      </li>
+
+      <li>
+        non-square tiles, as the ones used for sliding would be good
+        to have, sliding itself isn't strictly necessary for
+        Milestone2, could be suspended for Milestone3
+      </li>
+
+      <li>
+        At least one final boss is a minimum for this release, a
+        second mini-boss would be good as well.
+      </li>
+
+      <li>
+        info-boxes that present a dialog-window on jump would be good
+        to teach the player new moves and actions
+      </li>
+
+      <li>
+        multilanguage support (via gettext or such) might be good with
+        the number of text increasing
+      </li>
+
+      <li>
+        ice and fireflower should get more specifc meaning and
+        abilities
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="copyright">
+<img style="float:right; vertical-align:middle;" width="124px" height="32px" border="0" alt="BerliOS Developer Logo" src="http://developer.berlios.de/bslogo.php?group_id=3467">
+          Contact via IRC: irc.freenode.net, #supertux<br>
+
+          Contact via <a href="http://developer.berlios.de/mail/?group_id=3467">Mailing
+            List</a>: <a href="mailto:supertux-devel@lists.berlios.de">supertux-devel@lists.berlios.de</a><br>
+
+          Last update: 2005-04-04<br>
+</div>
+</body>
+</html>

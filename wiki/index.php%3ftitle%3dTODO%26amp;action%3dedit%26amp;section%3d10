@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="TODO" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>TODO - SuperTux</title>
+    <style type="text/css" media="screen">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">TODO</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From SuperTux</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Table of contents</b> <script type="text/javascript">showTocToggle("show","hide")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#Milestone_2">1 Milestone 2</a><br /></div>
+<div class="tocline"><a href="#Notes">2 Notes</a><br /></div>
+<div class="tocline"><a href="#Programming">3 Programming</a><br /></div>
+<div class="tocindent">
+<p><a href="#Collision_Detection">3.1 Collision Detection</a><br />
+<a href="#Code_Refactoring.2FCleanup">3.2 Code Refactoring/Cleanup</a><br />
+<a href="#Actions">3.3 Actions</a><br />
+<a href="#Scripting.2FCutscenes">3.4 Scripting/Cutscenes</a><br />
+<a href="#Badguys">3.5 Badguys</a><br />
+<a href="#Objects">3.6 Objects</a><br />
+<a href="#Optimisations">3.7 Optimisations</a><br />
+<a href="#Miscellaneous">3.8 Miscellaneous</a><br />
+<a href="#Statistics">3.9 Statistics</a><br />
+<a href="#Sound">3.10 Sound</a><br />
+<a href="#Bugs">3.11 Bugs</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#Levels">4 Levels</a><br /></div>
+<div class="tocline"><a href="#Graphics">5 Graphics</a><br /></div>
+<div class="tocline"><a href="#Sounds">6 Sounds</a><br /></div>
+<div class="tocline"><a href="#Music">7 Music</a><br /></div>
+<div class="tocline"><a href="#Editor">8 Editor</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=1" title="TODO">edit</a>]</div><a name="Milestone_2"></a><h2> Milestone 2 </h2>
+<p>Documents and ideas: <a href="/wiki/index.php/Milestone_2" title="Milestone 2">Milestone 2</a> esp. <a href="/wiki/index.php/World_2" title="World 2">World 2</a>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=2" title="TODO">edit</a>]</div><a name="Notes"></a><h2> Notes </h2>
+<div style="color:red; font-size: 125%; border-top: 1px solid red; border-bottom: 1px solid red; text-align: center; margin-top: 1em; margin-bottom: 1em;">
+<p>Attention: Only developers should edit this page. Please add <a href="/wiki/index.php/User_ideas" title="User ideas">User ideas</a> and <a href="/wiki/index.php/Bugs" title="Bugs">Bugs</a> to the end of their pages
+</p>
+</div >
+<p><b>High priority H:</b> milestone goals that should be implemented for next milestone
+</p><p><b>Medium priority M:</b> would be nice to have for next milestone, but should be secondary to high priority goals
+</p><p><b>Low priority L:</b> things that should be fixed sometime
+</p><p><b>?:</b> things that need to be discussed to determine whether or not they should be implemented
+</p><p><b>D:</b> features that will be implemented but need further discussion on how to implement them
+</p><p>Apart from issues listed here, <a href="/wiki/index.php/Category:Needs_Code" title="Category:Needs Code">Category:Needs Code</a>, <a href="/wiki/index.php/Category:Needs_Sound" title="Category:Needs Sound">Category:Needs Sound</a> and <a href="/wiki/index.php/Category:Needs_Graphics" title="Category:Needs Graphics">Category:Needs Graphics</a> list articles that describe content which still lacks one of the three.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=3" title="TODO">edit</a>]</div><a name="Programming"></a><h2> Programming </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=4" title="TODO">edit</a>]</div><a name="Collision_Detection"></a><h3> Collision Detection </h3>
+<ul><li> <b>?:</b> Give tiles a configurable friction factor and make tux react to it. (for Icy tiles)
+</li></ul>
+<ul><li> <b>M</b> Slope values aren't flipped if you flip tilemaps. THe collision code would need to be aware which tilemaps are flipped and then adjust the slope values to that. (The bug is only marked M as currently you can't die because of that anymore, and because you can simply avoid the situation in the levels)
+</li><li> <b>L</b> The collision detection code doesn't move tux completely out of the collision on slopes. All cases where this had bad effects should be worked around at the moment, so this bug has very low priority.
+</li><li> <b>H</b> That slide along code sometimes pushes you into a crush position (try in platforms.stl)
+</li></ul>
+<dl><dd><dl><dd>Not reproducable. At what location?
+</dd></dl>
+</dd></dl>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=5" title="TODO">edit</a>]</div><a name="Code_Refactoring.2FCleanup"></a><h3> Code Refactoring/Cleanup </h3>
+<ul><li> <b>L:</b> Implement a remove_listener function, so that you can keep track when GameObject get added/removed to the Sector.
+</li><li> <b>L:</b> name files according to the classes they contain, e.g. tile_manager.* to TileManager.* because it contains a class named TileManager and not tile_manager
+</li><li> <b>L:</b> Refactor worldmap code to run like a normal GameSession with some special GameObjects
+</li><li> <b>L:</b> There are still some mainloops left outside the MainLoop class.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=6" title="TODO">edit</a>]</div><a name="Actions"></a><h3> Actions </h3>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=7" title="TODO">edit</a>]</div><a name="Scripting.2FCutscenes"></a><h3> Scripting/Cutscenes </h3>
+<ul><li> <b>H:</b> extract translatable strings from the scripts
+</li><li> <b>L:</b> Useful error messages. Report line and command that caused error.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=8" title="TODO">edit</a>]</div><a name="Badguys"></a><h3> Badguys </h3>
+<ul><li> <b>M:</b> create more and better Badguys, see <a href="/wiki/index.php/Badguys" title="Badguys">Badguys</a> for ideas
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=9" title="TODO">edit</a>]</div><a name="Objects"></a><h3> Objects </h3>
+<ul><li> <b>H:</b> Don't simply duplicate code in the following objects: Snowball/PoisonIvy, UnstableTile/SkullTile
+</li><li> <b>H:</b> Infobox: Don't show scroll arrows if the text is smaller than the box. Try pixelwise smooth scrolling instead of 1 line per keypress. Try to avoid scrolling textboxes anyway, players are bored if they have to read so much. Try to avoid infoboxes where possible, the game is played by lots of kids who either can't read yet or don't know english, they'll just be confused by text they can't understand.
+<ul><li>Infoboxes are really the only effective way to introduce gameplay elements.  For example, the run sign in "Welcome to Antartica" and the associated barrier are impassible for those who haven't figured out yet that the action key is the run key too.  Info boxes are not as evil as reading a manual, and gives information out at just the right time. Manuals can expose spoilers. -- tuxdev
+</li><li> I agree. (Short) infoboxes are OK for tutorials. Regular levels should avoid them, though. --delta
+</li></ul>
+</li><li> <b>L:</b> add a rope object on which tux is able to climb, also add a&nbsp;? block that emits a rope when hit
+</li><li> <b>L:</b> add a "geyser" object: It's a fountain of water that raises in certain intervals. It can be used as jump-pad as the water gives tux and up-boost when standing on it.
+</li><li> <b>?:</b> Doors that execute a script when Tux enters them
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=10" title="TODO">edit</a>]</div><a name="Optimisations"></a><h3> Optimisations </h3>
+<ul><li> <b>L:</b> Combine tiles into bigger images (worldmap and the waterfall tiles come to mind). This should improve load time and opengl speed a bit (because we need fewer texture changes).
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=11" title="TODO">edit</a>]</div><a name="Miscellaneous"></a><h3> Miscellaneous </h3>
+<ul><li> <b>M:</b> Make sure levels for version 0.1.2 still work. Currently this isn't the case because some files have been renamed and other small stuff... Our levelmaking fans will be happy if they don't loose the ability to play their old levels.
+</li><li> <b>M:</b> Tux did go up/down 1 or 2 pixels each step when walking around in the 0.1.x releases which made the walk look a bit more natural. I don't know if this was done intentionally or why it doesn't work anymore, but it would be nice to have this effect again.
+</li><li> <b>L:</b> the camera does some nasty little jumps if you jumped up on a higher place where the camera didn't completely follow yet and you fall down directly again. This will suddenly raise the camera up.
+</li><li> <b>M:</b> Support multiple tilesets per level. This way users/modders can easily extend the tileset with by simply adding new .strf files into the data directory. Proposed format:
+</li></ul>
+<pre>
+  (supertux-level
+    (name ...)
+    ...
+    (tileset
+      (import (tileset &quot;images/tilesets/snow.stts&quot;) (start 0) (end 50))
+      (import (tileset &quot;images/tilesets/stone.stts&quot;) (start 51) (end 102))
+    )
+    ...
+    (sector
+      (tilemap
+        (ids 1 5 58 101 2 ...)
+      )
+    )
+  )
+</pre>
+<ul><li> <b>D:</b> think about icebullet specifics
+<ul><li> Dev mailing list: we're debating the behavior right now.
+</li></ul>
+</li><li> <b>L:</b> Try to avoid all random stuff in the game. There should be no calls to RandomGenerator in gameobjcts (at least the result shouldn't affect the gamelogic at all)
+</li><li> <b>M:</b> Option to delete or overwrite existing savegames.
+</li><li> <b>L:</b> Add line-editing functionality to Console
+</li><li> <b>L:</b> Give each subject discussed at <a href="/wiki/index.php/Meeting_log_%282005-04-02%29" title="Meeting log (2005-04-02)">Meeting_log_(2005-04-02)</a> its own Wiki page.
+</li><li> <b>D:</b> Discuss <a href="/wiki/index.php/Talk:Timeout" title="Talk:Timeout">timeout</a> effects.
+</li><li> <b>D:</b> Discuss  collision behaviour while Tux is carrying a <a href="/wiki/index.php/Category_talk:Portable" title="Category talk:Portable">portable</a>.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=12" title="TODO">edit</a>]</div><a name="Statistics"></a><h3> Statistics </h3>
+<ul><li> <b>L:</b> save score on per-level basis to make high-score (this means coins/time)
+</li><li> <b>M:</b> Show statistics on level completion. 
+</li><li> <b>?:</b> Show total count of coins collected in all levels on the worldmap
+<ul><li> initial implementation is there, however the screen should fade in (preferably a little later than the endsequence start)
+</li><li> the screen should be displayed until the player presses a key (or a longer period of time like 15 seconds) is over
+</li><li> statistics counting also doesn't seem to be correct yet
+<ul><li> coins in bonus blocks are not counted
+</li></ul>
+</li></ul>
+</li><li> load/save statistics
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=13" title="TODO">edit</a>]</div><a name="Sound"></a><h3> Sound </h3>
+<ul><li> <b>?:</b> Pass reference distance to SoundManager::play(), e.g. 600px to reduce volume by 50% for every screen the sound is away from the player
+</li><li> <b>L:</b> create more sound effects, see <a href="/wiki/index.php/User_ideas#Sound_Effects" title="User ideas">User_ideas#Sound_Effects</a> for ideas
+</li><li> <b>L:</b> ability to jump back at a specific position in a music file on loop (add .music files that describe the behaviour)
+</li><li> <b>L:</b> Ability to run scripts that drive the music (ability to jump around the music file)
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=14" title="TODO">edit</a>]</div><a name="Bugs"></a><h3> Bugs </h3>
+<ul><li> <b>H:</b> Check/Fix bullet speed/behaviour
+<ul><li> Please elaborate - what exactly needs to be checked or fixed? 
+</li><li> (Just compare it with what bullets did in milestone1, the reason the stuff is different now is because the code there is not coded in a framerate independent way)
+</li><li> In MS1 Tux is <a href="/wiki/index.php/Image:Fireball_ms1-nq8.png" title="Image:Fireball ms1-nq8.png">spitting the bullets</a> in svn version he is <a href="/wiki/index.php/Image:Fireball_ms2-nq8.png" title="Image:Fireball ms2-nq8.png">throwing them</a>. Thats the difference I notice, maybe there is also more subtile framebased stuff. --<a href="/wiki/index.php/User:WolfgangB" title="User:WolfgangB">WolfgangB</a> 15:36, 9 Jul 2006 (BST)
+</li><li> Checked and (presumably) fixed in r4143 --<a href="/wiki/index.php/User:Sommer" title="User:Sommer">Sommer</a> 00:11, 10 Aug 2006 (BST)
+</li></ul>
+</li><li> <b>L:</b> It seems like we get non-UTF8 strings from Windows error messages. SuperTux expects UTF-8 encodings.
+<ul><li> Correctly convert strings we get from PHYSFS_getLastError() and SDL_GetError() to UTF-8
+</li><li> PHYSFS_getLastError() returns the exact string it got from calling std::strerror(), so it uses the encoding implied by LC_MESSAGES. On Windows, this might be everything from Windows-1250 or ISO-8859-15 to Big5.
+</li></ul>
+</li><li> <b>L:</b> Playback of a demo stops at sector transitions. Controller is back to keyboard then...
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=15" title="TODO">edit</a>]</div><a name="Levels"></a><h2> Levels </h2>
+<ul><li> <b>H:</b> create 10 or more <a href="/wiki/index.php/Levels/World2" title="Levels/World2">new levels</a> of different size and complexity, using the new features of milestone 2.
+</li><li> <b>H:</b> <a href="/wiki/index.php/Levels/M2Test" title="Levels/M2Test">Test existing Levels</a> if they still work.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=16" title="TODO">edit</a>]</div><a name="Graphics"></a><h2> Graphics </h2>
+<ul><li> <b>H:</b> add more forest tiles; some of the current ones need fixing.
+</li><li> <b>H:</b> Create a ghost forest tileset.
+</li><li> <b>H:</b> image for castle door with 5 key holes
+</li><li> <b>H:</b> new tiles for the forest worldmap
+</li><li> <b>L:</b> graphics for ropes
+</li><li> <b>L:</b> graphics for bubbles and soap (not necessary for Milestone 2)
+</li><li> <b>?/D:</b> new enemies (first need to be designed)
+</li><li> <b>?:</b> for most level backgrounds, create three tileable image parts that tile like this:
+</li></ul>
+<pre>+-+-+
+|1|1|
++-+-+
+|1|1|
++-+-+
+|2|2|
++-+-+
+|3|3|
++-+-+
+|3|3|
++-+-+
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=17" title="TODO">edit</a>]</div><a name="Sounds"></a><h2> Sounds </h2>
+<ul><li> <b>?:</b> See <a href="/wiki/index.php/World_2#Atmosphere" title="World 2">World_2#Atmosphere</a> for more ambient sound ideas
+</li><li> <b>H:</b> make some sound when the player dies and looses coins. So that you get some feedback what is going on.
+</li><li> <b>?:</b> Wind (ambient) for high plateaus, over-the-clouds action, fast platforms, ...
+</li><li> <b>D:</b> Short "Nolok" and "Tux" themed sound effects(?)
+</li><li> <b>?:</b> Flapping for flying creatures (e.g. the Zeekling)
+</li><li> <b>?:</b> Crushing ice (Stalactite or breakable Ice tile)
+</li><li> <b>?:</b> Warp sound for Hatch-style Dispenser
+</li><li> <b>?:</b> Sound when tux drinks a magic potion that flips the level around 
+<ul><li> that old sound from the flower? or better not&nbsp;;-)
+</li></ul>
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=18" title="TODO">edit</a>]</div><a name="Music"></a><h2> Music </h2>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=TODO&amp;action=edit&amp;section=19" title="TODO">edit</a>]</div><a name="Editor"></a><h2> Editor </h2>
+<p>(The editor is not release critical therefore no ratings for these TODOS)
+</p>
+<ul><li> Scroll TileList with middle mouse, Get different Tilegroups
+<dl><dd>Isn't that the way it is atm? --<a href="/wiki/index.php/User:WolfgangB" title="User:WolfgangB">WolfgangB</a> 18:23, 7 Aug 2006 (BST)
+<dl><dd>Only if one tilegroup is selected, with default group (empty string) you can't scroll, once you have set it to "All" or anything else oyu can. Should be bug (or feature) in GTK, it's not controlled by program.
+</dd></dl>
+</dd></dl>
+</li><li> Add scrollbars to tilelist widget
+</li><li> Add scrollbars to level?
+</li><li> Create an overview widget (where to place this in the GUI?)
+<dl><dd> Overview for what? -- <a href="/wiki/index.php?title=User:Penma&amp;action=edit" class="new" title="User:Penma">Penguinmaster</a> 15:46, 4 Oct 2006 (CEST)
+<dl><dd>The sector. Like a minimap. 
+</dd></dl>
+</dd></dl>
+</li><li> preserve unknown lisp trees
+</li><li> Grab Mouse Pointer when scrolling so that we can scroll as much as we want (and the mouse is still where it was before scrolling)
+<dl><dd>I don't think that would be a good idea. I at least found that applications that does that are hard to use. --<a href="/wiki/index.php/User:AnMaster" title="User:AnMaster">AnMaster</a> 10:46, 13 Nov 2006 (CET) 
+</dd></dl>
+</li><li> More custom property editors:
+<ul><li> Spawnpoint selector
+</li><li> Texts
+</li><li> Scripts (we had a very good gtksourceview based editor which is disabled at the moment, maybe split the editor to a separate dll and load different editors on demand?)
+<dl><dd>Why was it disabled? --<a href="/wiki/index.php/User:WolfgangB" title="User:WolfgangB">WolfgangB</a> 16:45, 13 Jul 2006 (BST)
+<dl><dd>Because it crash the editor on Windows, and because it add lots of extra deps. --<a href="/wiki/index.php/User:AnMaster" title="User:AnMaster">AnMaster</a> 23:27, 20 Jul 2006 (BST)
+<dl><dd>"lots of extra deps" anything that is not part of every serious distro? Why not fix the crash instead of removing features? 
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</li></ul>
+</li><li> Ask for Save on close/load/new
+</li><li> Support resizing of level with drag&amp;drop on the level borders
+</li><li> Support selection of multiple objects
+</li><li> Layer switching on keys 1,2,3,...,0 CTRL+1,2,3,...,0 to switch visibility, key 0 for objects
+</li><li> Editor has strange behaviour when you select a tile in the middle, right-click select and move the mouse too much to the right
+</li><li> Redraw sector after loading, undo, delete
+</li><li> Tool not working after loading new level
+<dl><dd>Added a workaround for this by reseting to the Select tool when loading new level. --<a href="/wiki/index.php/User:AnMaster" title="User:AnMaster">AnMaster</a> 20:25, 8 Sep 2006 (BST)
+</dd></dl>
+</li><li> Windows builds seem to silently crash when loading huge levels
+<dl><dd>huge as in 100x100 or more like 10000x10000?
+<dl><dd>the level old world2/airkey.stl crashed both editor and the game itself on windows. --<a href="/wiki/index.php/User:AnMaster" title="User:AnMaster">AnMaster</a> 17:56, 30 Jun 2006 (BST)
+<dl><dd>the old airkey was 300x300. It makes the editor slow on my linux box but it's working--<a href="/wiki/index.php/User:WolfgangB" title="User:WolfgangB">WolfgangB</a> 00:14, 6 Jul 2006 (BST)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</li><li> Make the right click menu from sector tab a normal menu so that users can easily find it
+<dl><dd>Maybe add them to a toolbar? that could be useful. --<a href="/wiki/index.php/User:AnMaster" title="User:AnMaster">AnMaster</a> 23:27, 20 Jul 2006 (BST)
+</dd></dl>
+</li><li> When you set the path to the supertux data dir the editor doesn't use the new path until you restart the editor.
+</li><li> Add a new way to copy parts of one level to another. 
+</li><li> You can't remove first sector when there is exactly two sectors in the level.
+<dl><dd> Should be intended behaviour. Same thing as you can't remove all tilemaps, as you wouldn't be able to do anything, you are even not able to create a new tilemap. Well, and... main sector has to exist, otherwise level won't start. -- <a href="/wiki/index.php?title=User:Penma&amp;action=edit" class="new" title="User:Penma">Penguinmaster</a> 15:46, 4 Oct 2006 (CEST)
+<dl><dd>No, it's not intended. It was a quick fix to prevent crashing.
+</dd></dl>
+</dd></dl>
+</li></ul>
+
+<!-- Saved in parser cache with key supertux:pcache:idhash:935-1!1!0!1!0!1!0!!en and timestamp 20070102163251 -->
+<div class="printfooter">
+Retrieved from "<a href="http://supertux.berlios.de/wiki/index.php/TODO">http://supertux.berlios.de/wiki/index.php/TODO</a>"</div>
+	    <div id="catlinks"><p class='catlinks'><a href="/wiki/index.php?title=Special:Categories&amp;article=TODO" title="Special:Categories">Categories</a>: <a href="/wiki/index.php/Category:Development" title="Category:Development">Development</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/TODO">Article</a></li><li id="ca-talk"
+	       	       ><a href="/wiki/index.php/Talk:TODO">Discussion</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=TODO&amp;action=edit">Edit</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=TODO&amp;action=history">History</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Personal tools</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=Special:Userlogin&amp;returnto=TODO">Create an account or log in</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/logo.png);"
+	    href="/wiki/index.php/Main_Page"
+	    title="Main Page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Navigation</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/Main_Page">Main Page</a></li>	      <li id="n-homepage"><a href="http://supertux.berlios.de/">Homepage</a></li>	      <li id="n-projectpage"><a href="http://developer.berlios.de/projects/supertux/">Project page</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/Special:Recentchanges">Recent changes</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/Special:Randompage">Random page</a></li>	      <li id="n-help"><a href="/wiki/index.php/Help:Contents">Help</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Search</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/Special:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="f" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Go"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Search" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Toolbox</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=Special:Whatlinkshere&amp;target=TODO">What links here</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=Special:Recentchangeslinked&amp;target=TODO">Related changes</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/Special:Specialpages">Special pages</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://developer.berlios.de/" title="BerliOS Developer"> <img src="http://developer.berlios.de/bslogo.php?group_id=3467" width="124px" height="32px" border="0" alt="" /></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 14:35, 31 Dec 2006.</li>	  <li id="f-viewcount">This page has been accessed 14338 times.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/SuperTux:About" title="SuperTux:About">About SuperTux</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/SuperTux:General_disclaimer" title="SuperTux:General disclaimer">Disclaimers</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by unicorn in 1.08 secs. -->
+  </body>
+</html>
